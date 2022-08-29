@@ -15,5 +15,11 @@ fi
 
 $(echo "$writestr" > "${writefile}")
 
+if [[ ! -f "$writefile" ]]
+  then
+    echo "File not created, Error Occured!"
+    exit 1
+fi
+
 exit 0
 
