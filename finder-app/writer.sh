@@ -17,7 +17,7 @@ if [ -z "$writefile" ] || [ -z "$writestr" ]
 fi
 
 #check if directory path exists, if not create
-if [[ ! -f "$writefile" ]]
+if [ ! -f "$writefile" ]
   then
     $(mkdir -p "$(dirname "${writefile}")")
 fi
@@ -26,7 +26,7 @@ fi
 $(echo "$writestr" > "${writefile}")
 
 # Check if the fileis successfully created
-if [[ ! -f "$writefile" ]]
+if [ ! -f "$writefile" ]
   then
     echo "File not created, Error Occured!"
     exit 1
