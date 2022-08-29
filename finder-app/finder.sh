@@ -17,7 +17,7 @@ if [ -z "$filesdir" ] || [ -z "$searchstr" ]
 fi
 
 # check  if it is a valid directly path
-if [[ ! -d "$filesdir" ]]
+if [ ! -d "$filesdir" ]
   then
     echo "Invalid path to filesdirectory"
     exit 1
