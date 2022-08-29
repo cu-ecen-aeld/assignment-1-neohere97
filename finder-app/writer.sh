@@ -14,7 +14,6 @@ if [[ ! -f "$writefile" ]]
 fi
 
 $(echo "$writestr" > "$(dirname "${writefile}")"/"$(basename "${writefile}")")
-echo "file directory has been created I think"
 
 exit 0
 
