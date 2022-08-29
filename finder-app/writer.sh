@@ -11,7 +11,7 @@ writestr=$2
 
 if [ -z "$writefile" ] || [ -z "$writestr" ]
   then
-    echo "One of the parameter not supplied"
+    echo "One or both of the parameter(s) not supplied"
     exit 1
 fi
 
