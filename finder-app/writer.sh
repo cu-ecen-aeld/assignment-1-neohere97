@@ -13,7 +13,7 @@ if [[ ! -f "$writefile" ]]
     $(mkdir -p "$(dirname "${writefile}")")
 fi
 
-$(echo "$writestr" > "$(dirname "${writefile}")"/"$(basename "${writefile}")")
+$(echo "$writestr" > "${writefile}")
 
 exit 0
 
